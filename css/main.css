@@ -11,13 +11,15 @@ list-style: none;
 }
 
 #shell {
-  background-color: lightblue;
+  background-color: #295175;
   height: auto;
-  width: auto;
+  max-width: 300px;
+  margin: 10% auto
 }
 
-.empty {
-  background-color: gray;
+.calculate {
+  background-color: #00872F;
+  color: white;
 }
 
 #result {
@@ -33,9 +35,5 @@ list-style: none;
 }
 
 button {
-  height:40px;
-}
-
-.offset-top{
-  margin-top: 10%;
+  height:50px;
 }
