@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+list-style: none;
+}
+
+#shell {
+  background-color: lightblue;
+  height: auto;
+  width: auto;
+}
+
+.empty {
+  background-color: gray;
+}
+
+#result {
+  text-align: right;
+  background-color: red;
+  height: 80px;
+  vertical-align: baseline;
+}
+
+.operator {
+  background-color: orange;
+  color: white;
+}
+
+button {
+  height:40px;
+}
+
+.offset-top{
+  margin-top: 10%;
+}

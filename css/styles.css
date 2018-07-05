@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+list-style: none;
+}
+
+.container {
+  background-color: #F2EADF
+}
+
+/*---------- Navigation ------------*/
+.navbar {
+  background-color: #3B2817;
+  opacity: 50%;
+}
+
+.navbar .navbar-nav {
+  flex-direction: row;
+}
+
+.navbar .navbar-nav a.nav-link {
+  display: flex;
+  padding: 0px 10px;
+  border: solid 1px;
+  color: #fff;
+  margin-left: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  /* height: 60px; */
+}
+
+.header img {
+  height: 40px;
+  width: 40px;
+}
+
+.header ul {
+  margin-bottom: 0px;
+  margin-right: 10px;
+  padding:0px;
+}
+.header ul li {
+  display: inline-block;
+  margin: 0px 2px;
+}
+
+
+
+/*----------- Carousel ------------*/
+.carousel-inner {
+  margin-top: 6%;
+  max-height: 400px;
+}
+
+.carousel img {
+  height: 400px;
+}
+
+/*----------- Message ------------*/
+.message {
+  text-align: center;
+  padding: 10px 0px;
+  color: #3B2817;
+}
+
+/*----------- Projects (Cards) --------------*/
+#projects {
+  margin: 0px -10px;
+}
+
+
+.card {
+  margin: 5px;
+  height: 450px;
+}
+
+.card img:hover {
+background-color: yellow;
+}
+
+/* Controls Image height of card */
+.card img {
+  height: 200px;
+}
+
+/*----------- Bottom Panels ------------*/
+#bottom_panels {
+  margin: 10px 0px;
+  text-align: justify;
+}
+
+#bottom_panels span {
+  color: red;
+  text-align:right;
+}
+
+#bottom_panels h5 {
+  text-align: center;
+}
+
+#latest_project {
+  border-right: solid 2px;
+}
+
+#skills {
+  border-right: solid 2px;
+}
+
+#skills ul {
+list-style: initial;
+}
+
+
+/*----------- Footer -----------*/
+.footer {
+  background-color: #3B2817;
+  color: #fff;
+  /* padding: 10px 5px; */
+  margin-top: 5px;
+}
+
+.footer span {
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+
+/*---------- Media Query --------------*/
+
+@media (max-width: 786px) {
+  #latest_project {
+    border-right: none;
+    border-bottom: solid 2px;
+    margin-bottom: 10px;
+  }
+
+  #skills {
+    border-right: none;
+    border-bottom: solid 2px;
+    margin-bottom: 10px;
+  }
+
+  .header img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (max-width:580px ) {
+  .header ul {
+  display: none;
+  }
+  .navbar .navbar-nav a.nav-link {
+    font-size: .8rem;
+
+}
