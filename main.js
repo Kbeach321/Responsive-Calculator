@@ -8,7 +8,8 @@ var operator='', num1='', num2='';
 function pushNumber() {
   calculationArray.push(event.target.value);
   document.querySelector(".result_text").textContent = calculationArray.join("")
-  console.log(calculationArray);
+  // TEST
+  // console.log(calculationArray);
 }
 
 var $numbers = document.querySelectorAll(".num");
@@ -24,6 +25,7 @@ for (i=0; i < $operator.length; i++) {
 function pushOperator() {
   calculationArray.push(event.target.value);
   document.querySelector(".result_text").textContent = calculationArray.join("")
+  // TEST
   console.log(calculationArray);
 }
 
@@ -38,6 +40,7 @@ function calculation(item) {
     num1 += item;
   }
 }
+
 function calculate() {
   calculationArray.forEach(calculation);
   if(operator === '+') {
@@ -50,6 +53,12 @@ function calculate() {
     result = Number(num1) / Number(num2);
   }
 document.querySelector(".result_text").textContent = result
+// TEST
+console.log(result);
+calculationArray = [];
+num1 = 0;
+num2 = 0;
+operator = '';
 }
 
 // clearAll Function -- resets the page//
