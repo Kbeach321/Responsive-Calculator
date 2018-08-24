@@ -1,19 +1,20 @@
-
 // variables //
 var calculationArray = [];
-var result = 0;
+var result = [];
 var operators = ['+', '*', '/', '-'];
 var operator='', num1='', num2='';
 
 // Number Functions //
+function pushNumber() {
+  calculationArray.push(event.target.value);
+  document.querySelector(".result_text").textContent = calculationArray.join("")
+  console.log(calculationArray);
+}
+
 var $numbers = document.querySelectorAll(".num");
 for (i=0; i < $numbers.length; i++) {
   $numbers[i].addEventListener("click",pushNumber);
 };
-function pushNumber() {
-  calculationArray.push(event.target.textContent);
-  console.log(calculationArray);
-}
 
 // Operator Functions //
 var $operator = document.querySelectorAll(".operator");
@@ -21,14 +22,14 @@ for (i=0; i < $operator.length; i++) {
   $operator[i].addEventListener("click",pushOperator);
 };
 function pushOperator() {
-  calculationArray.push(event.target.textContent);
+  calculationArray.push(event.target.value);
+  document.querySelector(".result_text").textContent = calculationArray.join("")
   console.log(calculationArray);
 }
 
 // Calculate Function -- combines the numbers //
 document.querySelector(".calculate").addEventListener("click", calculate)
 function calculation(item) {
-
   if(operators.indexOf(item) !== -1) {
     operator = item;
   } else if(operator.length === 1){
